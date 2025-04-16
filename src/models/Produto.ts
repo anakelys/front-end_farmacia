@@ -1,4 +1,4 @@
-import Categoria from "./Categoria";
+import Categoria from "./Categorias";
 
 
 export default interface Produto {
