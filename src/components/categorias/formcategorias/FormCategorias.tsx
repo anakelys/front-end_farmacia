@@ -1,6 +1,3 @@
-
-
-
 import { ChangeEvent, useEffect, useState } from "react";
 import { RotatingLines } from "react-loader-spinner";
 import { useNavigate, useParams } from "react-router-dom";
@@ -46,7 +43,7 @@ function FormCategorias() {
     
         try {
             if (id !== undefined) {
-                await atualizar(`/editarcategoria/${id}`, categorias, setCategorias);
+                await atualizar(`/categorias`, categorias, setCategorias);
                 alert('A Categoria foi atualizada com sucesso!');
             } else {
                 await cadastrar(`/categorias`, categorias, setCategorias);
@@ -114,6 +111,3 @@ function FormCategorias() {
 }
 
 export default FormCategorias;
-
-
-

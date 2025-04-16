@@ -11,7 +11,7 @@ function ListaCategorias() {
 
     async function buscarCategorias() {
         try {
-            await buscar('/categorias', setCategorias); // sem headers/token
+            await buscar('/categorias', setCategorias);
         } catch (error: any) {
             console.error("Erro ao buscar Categorias:", error);
         }
